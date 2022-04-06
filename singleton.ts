@@ -1,5 +1,5 @@
-class ChocolaFactory {
-  private static uniqInstance: ChocolaFactory
+class ChocolateFactory {
+  private static uniqInstance: ChocolateFactory
   private id
   private constructor() {
     this.id = 1
@@ -7,7 +7,7 @@ class ChocolaFactory {
 
   public static getInstance() {
     if (!this.uniqInstance) {
-      this.uniqInstance = new ChocolaFactory()
+      this.uniqInstance = new ChocolateFactory()
     }
 
     return this.uniqInstance
@@ -18,7 +18,7 @@ class ChocolaFactory {
   }
 }
 
-const factory = ChocolaFactory.getInstance()
+const factory = ChocolateFactory.getInstance()
 factory.getId()
-const factory02 = ChocolaFactory.getInstance()
+const factory02 = ChocolateFactory.getInstance()
 factory02.getId()
